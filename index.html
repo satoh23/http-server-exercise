@@ -13,9 +13,19 @@
         font-weight: bold;
       }
     </style>
+    <script>
+      function clickHandler() {
+        const box = document.getElementById("box");
+        const p = document.createElement("p");
+        p.innerText = "Added by JS";
+        box.appendChild(p);
+      }
+    </script>
   </head>
   <body>
     <h1>My first</h1>
     <a href="https://html.spec.whatwg.org"> HTML </a>.
+    <button onclick="clickHandler()">JS</button>
+    <div id="box"></div>
   </body>
 </html>
